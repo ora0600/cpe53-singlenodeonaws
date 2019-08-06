@@ -8,7 +8,9 @@ in main.tf change your data of
 * key_name      = "your-key"
 * vpc_security_group_ids = ["sg-0592eb43a5d0290fc"]
 * subnet_id = "subnet-9a539ef0"
+
 Please change also variables.tf with your data.
+
 * variable "aws_access_key" {
 * variable "aws_secret_key" {
 *  variable "aws_region" {
