@@ -1,6 +1,6 @@
 # Confluent Platform Enterprise 5.3 as single node installation (4dev) in AWS
 Simple terraform script to deploy confluent platform enterprise to aws as a single node installation.
-Please change variables.tf with your data.
+
 
 ## adapt terraform script to your environment
 in main.tf change your data of
@@ -8,6 +8,10 @@ instance_type = "t2.large"
 key_name      = "your-key"
 vpc_security_group_ids = ["sg-0592eb43a5d0290fc"]
 subnet_id = "subnet-9a539ef0"
+Please change also variables.tf with your data.
+Key
+secret
+aws region
 
 ## execute terraform
 If done install terraform on your computer and execute
