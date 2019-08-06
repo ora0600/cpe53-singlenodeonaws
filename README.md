@@ -24,10 +24,14 @@ terraform apply
 ```
 ## play with your confluent environment in cloud
 to connect your aws compute instance via ssh use
+```
 ssh -i ~/keys/your-key.pem ec2-user@<PUBLIC IP of aws Instance>
+```
 
 If you want to work with the GUI of Confluent Control Center create a sshtunnel:
+```
 ssh -i ~/keys/your-key.pem -N -L 9022:ip-172-31-30-30.<YOUR-REGION-IN_AWS>.compute.internal:9021 ec2-user@<PUBLIC IP of aws Instance>
+```
   
 Then you can use confluent Control Center via http://localhost:9022
 
