@@ -4,21 +4,22 @@ Simple terraform script to deploy confluent platform enterprise to aws as a sing
 
 ## adapt terraform script to your environment
 in main.tf change your data of
-instance_type = "t2.large"
-key_name      = "your-key"
-vpc_security_group_ids = ["sg-0592eb43a5d0290fc"]
-subnet_id = "subnet-9a539ef0"
+* instance_type = "t2.large"
+* key_name      = "your-key"
+* vpc_security_group_ids = ["sg-0592eb43a5d0290fc"]
+* subnet_id = "subnet-9a539ef0"
 Please change also variables.tf with your data.
-Key
-secret
-aws region
+* variable "aws_access_key" {
+* variable "aws_secret_key" {
+*  variable "aws_region" {
 
 ## execute terraform
 If done install terraform on your computer and execute
+```
 terraform init
 terraform plan
 terraform apply
-
+```
 ## play with your confluent environment in cloud
 to connect your aws compute instance via ssh use
 ssh -i ~/keys/your-key.pem ec2-user@<PUBLIC IP of aws Instance>
@@ -30,7 +31,8 @@ Then you can use confluent Control Center via http://localhost:9022
 
 ## safe costs and destroy aws compute services
 If you are finished, execute
+```
 terraform destroy.
-
+```
   
 
