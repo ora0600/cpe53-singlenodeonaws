@@ -1,4 +1,4 @@
-# cpe53-singlenodeonaws
+# Confluent Platform Enterprise 5.3 as single node installation (4dev) in AWS
 Simple terraform script to deploy confluent platform enterprise to aws as a single node installation.
 Please change variables.tf with your data.
 
