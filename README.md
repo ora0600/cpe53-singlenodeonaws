@@ -6,8 +6,8 @@ Simple terraform script to deploy confluent platform enterprise to aws as a sing
 in main.tf change your data of
 * instance_type = "t2.large"
 * key_name      = "your-key"
-* vpc_security_group_ids = ["sg-0592eb43a5d0290fc"]
-* subnet_id = "subnet-9a539ef0"
+* vpc_security_group_ids = ["your security group id"]
+* subnet_id = "your subnet id"
 
 Please change also variables.tf with your data.
 
