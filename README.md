@@ -36,7 +36,7 @@ ssh -i ~/keys/your-key.pem -N -L 9022:ip-172-31-30-30.<YOUR-REGION-IN_AWS>.compu
 Then you can use confluent Control Center via http://localhost:9022
 
 ## safe costs and destroy aws compute services
-If you are finished, execute
+If you are finished, execute following command to destroy averything in AWS.This will save costs.
 ```
 terraform destroy.
 ```
