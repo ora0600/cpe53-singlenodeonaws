@@ -11,9 +11,9 @@ in main.tf change your data of
 
 Please change also variables.tf with your data.
 
-* variable "aws_access_key" {
-* variable "aws_secret_key" {
-*  variable "aws_region" {
+* variable "aws_access_key"
+* variable "aws_secret_key"
+*  variable "aws_region"
 
 ## execute terraform
 If done install terraform on your computer and execute
