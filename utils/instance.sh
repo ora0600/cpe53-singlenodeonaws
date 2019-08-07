@@ -13,9 +13,9 @@ chown ec2-user:ec2-user confluent-5.3.0/*
 rm confluent-5.3.0-2.12.tar.gz
 
 # adding metric into kafka broker for control center
-echo "metric.reporters=io.confluent.metrics.reporter.ConfluentMetricsReporter" >> software/confluent-5.3.0/etc/kafka/server.properties
-echo "confluent.metrics.reporter.bootstrap.servers=localhost:9092" >> software/confluent-5.3.0/etc/kafka/server.properties
-echo "confluent.metrics.reporter.topic.replicas=1" >> software/confluent-5.3.0/etc/kafka/server.properties
+echo "metric.reporters=io.confluent.metrics.reporter.ConfluentMetricsReporter" >> /home/ec2-user/software/confluent-5.3.0/etc/kafka/server.properties
+echo "confluent.metrics.reporter.bootstrap.servers=localhost:9092" >> /home/ec2-user/software/confluent-5.3.0/etc/kafka/server.properties
+echo "confluent.metrics.reporter.topic.replicas=1" >> /home/ec2-user/software/confluent-5.3.0/etc/kafka/server.properties
 
 ########### Creating the Service zookeeper ############
 
