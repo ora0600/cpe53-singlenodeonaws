@@ -146,7 +146,7 @@ echo "export CONFLUENT_HOME=${confluent_home_value}" >> /home/ec2-user/.bash_pro
 chown ec2-user:ec2-user /home/ec2-user/.bash_profile
 echo "export PATH=${confluent_home_value}/bin:\$PATH" >> /root/.bash_profile
 echo "export CONFLUENT_HOME=${confluent_home_value}" >> /root/.bash_profile
-# install cli
+# create install script for confluent cli, to install later if you need
 echo "#!/bin/bash" > /home/ec2-user/install_cli.sh
 echo "curl -L https://cnfl.io/cli | sh -s -- -b /usr/local/bin" >> /home/ec2-user/install_cli.sh
 chown ec2-user:ec2-user /home/ec2-user/install_cli.sh
