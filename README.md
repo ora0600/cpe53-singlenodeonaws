@@ -9,7 +9,7 @@ in main.tf change your data of
 * vpc_security_group_ids = ["your security group id"]
 * subnet_id = "your subnet id"
 
-I defined a fixed private IP. So, choose the right subnet, so that private IP do fit into the IP range of your subnet.
+I defined a fixed private IP. So, choose the right subnet, so that private IP fits into the IP range of your subnet.
 
 Please change also variables.tf with your data.
 
