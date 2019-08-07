@@ -34,6 +34,7 @@ ssh -i ~/keys/your-key.pem -N -L 9022:ip-172-31-30-30.<YOUR-REGION-IN_AWS>.compu
 ```
   
 Then you can use confluent Control Center via http://localhost:9022
+Of course you could also change the Security Group rule for your compte instance and open all the Ports, which are necessary to communicate with the Confluent installation on compute in aws. But a simple tunnel might be enough for short tests.
 
 ## safe costs and destroy aws compute services
 If you are finished, execute following command to destroy averything in AWS.This will save costs.
