@@ -9,19 +9,15 @@ What you need to setup in AWS:
 
 
 ## adapt terraform script to your environment
-in main.tf change your data of
+adapt the varibales file to your setup:
 * instance_type = "t2.large"
 * key_name      = "your-key"
 * vpc_security_group_ids = ["your security group id"]
 * subnet_id = "your subnet id"
-
-I defined a fixed private IP. So, choose the right subnet, so that private IP fits into the IP range of your subnet.
-
-Please change also variables.tf with your data.
-
+* vpc_private_ip = "private IP fit to the subnet. I defined a fixed private IP. So, choose the right subnet, so that private IP fits into the IP range of your subnet.
 * variable "aws_access_key"
 * variable "aws_secret_key"
-*  variable "aws_region"
+* variable "aws_region"
 
 ## execute terraform
 If done install terraform on your computer and execute
