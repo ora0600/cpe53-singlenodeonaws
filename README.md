@@ -1,12 +1,12 @@
 # Confluent Platform Enterprise 5.3 as single node installation (4dev) in AWS
 Simple terraform script to deploy confluent platform enterprise to aws as a single node installation.
 What you need to setup in AWS:
- *AWS SSH Key <your-key>
- *an existing Security Group, SSH enabled "your_security_group_id"
- *an existing Subnet "your subnet id"
- *AWS API key "aws_access_key"
- *AWS API secret "aws_secret_key"
- *Choose your region in AWS "aws_region"
+  * AWS SSH Key <your-key>
+  * an existing Security Group, SSH enabled "your_security_group_id"
+  * an existing Subnet "your subnet id"
+  * AWS API key "aws_access_key"
+  * AWS API secret "aws_secret_key"
+  * Choose your region in AWS "aws_region"
 
 
 ## adapt terraform script to your environment
