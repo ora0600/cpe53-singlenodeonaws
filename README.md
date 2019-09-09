@@ -14,7 +14,6 @@ adapt the varibales file to your setup:
 * key_name      = "your-key"
 * vpc_security_group_ids = ["your security group id"]
 * subnet_id = "your subnet id"
-* vpc_private_ip = "private IP fit to the subnet. I defined a fixed private IP. So, choose the right subnet, so that private IP fits into the IP range of your subnet.
 * variable "aws_access_key"
 * variable "aws_secret_key"
 * variable "aws_region"
