@@ -5,7 +5,6 @@ resource "aws_instance" "cp53" {
   key_name      = var.ssh_key_name
   vpc_security_group_ids = [var.vpc_securitygroup_id]
   subnet_id = var.vpc_subnet_id
-  private_ip = var.vpc_private_ip
   
   user_data = data.template_file.confluent_instance.rendered
 
