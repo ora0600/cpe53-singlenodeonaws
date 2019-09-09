@@ -2,11 +2,10 @@
 Simple terraform script to deploy confluent platform enterprise to aws as a single node installation.
 What you need to setup in AWS:
   * AWS SSH Key <your-key>
-  * an existing Security Group, SSH enabled "your_security_group_id"
-  * an existing Subnet "your subnet id"
   * AWS Access Keys : Access key ID "aws_access_key" and secret "aws_secret_key"
   * Choose your region in AWS "aws_region"
 
+The created aws compute instance will use default security group (normally for ssh enabled, please check) and the defautl subnet and choose a private IP adress. Public IP will be choosed as well automatically, there is no fixed IP (Elastic IP).
 
 ## adapt terraform script to your environment
 adapt the varibales file to your setup:
