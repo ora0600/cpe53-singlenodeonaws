@@ -3,8 +3,6 @@ resource "aws_instance" "cp53" {
   count         = var.instance_count
   instance_type = var.instance_type_resource
   key_name      = var.ssh_key_name
-  vpc_security_group_ids = [var.vpc_securitygroup_id]
-  subnet_id = var.vpc_subnet_id
   
   user_data = data.template_file.confluent_instance.rendered
 
