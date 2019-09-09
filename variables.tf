@@ -20,10 +20,6 @@ variable "vpc_subnet_id" {
   default = "your subnet ID"
 }
 
-variable "vpc_private_ip" {
-  default = "172.31.30.30"
-}
-
 variable "ssh_key_name" {
   default = "your ssh key"
 }
