@@ -12,14 +12,6 @@ variable "aws_region" {
   default = "your region"
 }
 
-variable "vpc_securitygroup_id" {
-  default = "your security group ID"
-}
-
-variable "vpc_subnet_id" {
-  default = "your subnet ID"
-}
-
 variable "ssh_key_name" {
   default = "your ssh key"
 }
