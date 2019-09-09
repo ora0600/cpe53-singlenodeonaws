@@ -4,8 +4,7 @@ What you need to setup in AWS:
   * AWS SSH Key <your-key>
   * an existing Security Group, SSH enabled "your_security_group_id"
   * an existing Subnet "your subnet id"
-  * AWS API key "aws_access_key"
-  * AWS API secret "aws_secret_key"
+  * AWS Access Keys : Access key ID "aws_access_key" and secret "aws_secret_key"
   * Choose your region in AWS "aws_region"
 
 
