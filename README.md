@@ -10,13 +10,12 @@ What you need to setup in AWS:
 
 ## adapt terraform script to your environment
 adapt the varibales file to your setup:
-* instance_type = "t2.large"
-* key_name      = "your-key"
-* vpc_security_group_ids = ["your security group id"]
-* subnet_id = "your subnet id"
-* variable "aws_access_key"
-* variable "aws_secret_key"
-* variable "aws_region"
+* instance_type = "t2.large", which resources template for your ec2 instance (check costs)
+* key_name      = "your-key", your ssh key, store in AWS
+* variable "aws_access_key", you have to create an API access key
+* variable "aws_secret_key", you have to create an API access key
+* variable "aws_region", which region do you want to deploy, e.g. eu-central-1
+* variable instance_count, default value is 1, if you need more compute increase the number
 
 ## execute terraform
 If done install terraform on your computer and execute
