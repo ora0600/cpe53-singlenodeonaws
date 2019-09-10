@@ -22,6 +22,12 @@ If done install terraform on your computer and execute
 terraform init
 terraform plan
 terraform apply
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+SSH = SSH  Access: ssh -i <sshkey> ec2-user@<public-ip>
+SSH_Tunnel = With Tunnel: ssh -i hackathon-temp-key.pem -N -L 9022:ip-172-31-14-21.<region>.compute.internal ec2-user@<publicip>
 ```
 ## play with your confluent environment in cloud
 to connect your aws compute instance via ssh use
