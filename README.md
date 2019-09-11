@@ -50,7 +50,7 @@ terraform destroy.
 ```
   
 ## Connect to Confluent Cloud
-I have put the script ccloud-generate-cp-config.sh in the $HOME directory. If you install the Confluent Cloud cli a directory ~/.ccloud will be generated. Here you have to place a config file for Cloud properties
+I have put the script ccloud-generate-env-vars.sh in the $HOME directory. If you install the Confluent Cloud cli a directory ~/.ccloud will be generated. Here you have to place a config file for Cloud properties
 ```
 cat ~/.ccloud/config
 bootstrap.servers=<confluent cloud server>:9092
@@ -62,8 +62,8 @@ basic.auth.credentials.source=USER_INFO
 schema.registry.basic.auth.user.info=<SCHEMA API Key>:<Schema API Secret>
 schema.registry.url=https://<Schema Registry Host>
 ```
-To generate the cloud properties files execute
+To generate the cloud properties files execute after you have added into config the correct Keys, URLs and secrets.
 ```
-~/ccloud-generate-cp-config-sh ~/.ccloud/config
+~/ccloud-generate-env-vars.sh ~/.ccloud/config
 ```
 All property files will be generated into ./delta_configs/.
