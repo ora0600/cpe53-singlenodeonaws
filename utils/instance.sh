@@ -3,6 +3,7 @@ yum update -y
 yum install wget -y
 yum install unzip -y
 yum install java-1.8.0-openjdk-devel.x86_64 -y
+yum install jq
 # install confluent
 mkdir -p /home/ec2-user/software
 chown ec2-user:ec2-user /home/ec2-user/software
