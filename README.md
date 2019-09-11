@@ -27,7 +27,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 Outputs:
 
 SSH = SSH  Access: ssh -i <sshkey> ec2-user@<public-ip>
-SSH_Tunnel = With Tunnel: ssh -i hackathon-temp-key.pem -N -L 9022:ip-172-31-14-21.<region>.compute.internal ec2-user@<publicip>
+SSH_Tunnel = With Tunnel: ssh -i hackathon-temp-key.pem -N -L 9022:ip-<Priv IP>.<region>.compute.internal ec2-user@<publicip>
 ```
 ## play with your confluent environment in cloud
 to connect your aws compute instance via ssh use
