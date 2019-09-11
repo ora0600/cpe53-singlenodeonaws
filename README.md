@@ -49,4 +49,21 @@ If you are finished, execute following command to destroy averything in AWS.This
 terraform destroy.
 ```
   
-
+## Connect to Confluent Cloud
+I have put the script ccloud-generate-cp-config.sh in the $HOME directory. If you install the Confluent Cloud cli a directory ~/.ccloud will be generated. Here you have to place a config file for Cloud properties
+```
+cat ~/.ccloud/config
+bootstrap.servers=<confluent cloud server>:9092
+ssl.endpoint.identification.algorithm=https
+security.protocol=SASL_SSL
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username="<API Key>" password="<API Secret>";
+basic.auth.credentials.source=USER_INFO
+schema.registry.basic.auth.user.info=<SCHEMA API Key>:<Schema API Secret>
+schema.registry.url=https://<Schema Registry Host>
+```
+To generate the cloud properties files execute
+```
+~/ccloud-generate-cp-config-sh ~/.ccloud/config
+```
+All property files will be generated into ./delta_configs/.
