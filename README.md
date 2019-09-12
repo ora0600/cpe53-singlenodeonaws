@@ -1,7 +1,7 @@
 # Confluent Platform Enterprise 5.3 as single node installation (4dev) in AWS
 Simple terraform script to deploy confluent platform enterprise to aws as a single node installation. Following software is included:
   * Confluent Platform 5.3
-  * Tools like wget, unzip, jq, kafkacat
+  * Tools like wget, unzip, jq
   * Java 1.8
   * ccloud-Generator script
 
