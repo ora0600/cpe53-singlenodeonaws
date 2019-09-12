@@ -1,5 +1,10 @@
 # Confluent Platform Enterprise 5.3 as single node installation (4dev) in AWS
-Simple terraform script to deploy confluent platform enterprise to aws as a single node installation.
+Simple terraform script to deploy confluent platform enterprise to aws as a single node installation. Following software is included:
+  * Confluent Platform 5.3
+  * Tools like wget, unzip, jq, kafkacat
+  * Java 1.8
+  * ccloud-Generator script
+
 What you need to setup in AWS:
   * AWS SSH Key <your-key>
   * AWS Access Keys : Access key ID "aws_access_key" and secret "aws_secret_key"
